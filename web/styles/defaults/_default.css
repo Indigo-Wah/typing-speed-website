@@ -1,0 +1,107 @@
+@import url('https://unpkg.com/@catppuccin/palette/css/catppuccin.css'); /* load the Catppuccin CSS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* set the default font */
+body {
+    /* font */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: var(--ctp-mocha-text);
+
+    /* background */
+    background-color: var(--ctp-mocha-surface0);
+
+    /* default margin */
+    margin: 0.1rem;
+
+    /* default padding */
+    padding: 0.1rem;
+
+    /* default display */
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content 1fr;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--ctp-mocha-mauve);
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--ctp-mocha-pink);
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.fancy {
+    color: var(--ctp-mocha-mauve);
+    font-style: italic;
+}
+
+/* set the default grid */
+.nav {
+    grid-column: 1;
+    min-width: 5%;
+    max-width: 95%;
+}
+
+.content {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
+}
+
+.content #title_div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fancy_title {
+    10% {background-image: linear-gradient(to bottom right, var(--ctp-mocha-pink), var(--ctp-mocha-pink), var(--ctp-mocha-pink), var(--ctp-mocha-mauve));}
+    20% {background-image: linear-gradient(to bottom right, var(--ctp-mocha-pink), var(--ctp-mocha-pink), var(--ctp-mocha-mauve));}
+    30% {background-image: linear-gradient(to bottom right, var(--ctp-mocha-pink), var(--ctp-mocha-mauve));}
+    40% {background-image: linear-gradient(to bottom right, var(--ctp-mocha-pink), var(--ctp-mocha-mauve), var(--ctp-mocha-mauve));}
+    50% {background-image: linear-gradient(to bottom right, var(--ctp-mocha-pink), var(--ctp-mocha-mauve), var(--ctp-mocha-mauve), var(--ctp-mocha-mauve));}
+    60% {background-image: linear-gradient(to bottom right, var(--ctp-mocha-mauve), var(--ctp-mocha-mauve), var(--ctp-mocha-mauve));}
+    70% {background-image: linear-gradient(to bottom right, var(--ctp-mocha-mauve), var(--ctp-mocha-mauve), var(--ctp-mocha-mauve), var(--ctp-mocha-pink));}
+    80% {background-image: linear-gradient(to bottom right, var(--ctp-mocha-mauve), var(--ctp-mocha-mauve), var(--ctp-mocha-pink));}
+    90% {background-image: linear-gradient(to bottom right, var(--ctp-mocha-mauve), var(--ctp-mocha-pink));}
+    100% {background-image: linear-gradient(to bottom right, var(--ctp-mocha-mauve), var(--ctp-mocha-pink));}
+  }
+
+#title {
+    padding: 0.5rem;
+
+    font-size: 3rem;
+    font-family: 'Roboto Mono';
+    font-weight: bold;
+
+    background-image: linear-gradient(to bottom right, var(--ctp-mocha-mauve), var(--ctp-mocha-pink));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    color: transparent;
+
+    animation-name: fancy_title;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+    border-bottom: 0.2rem solid var(--ctp-mocha-pink);
+}
