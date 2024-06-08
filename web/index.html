@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Typing</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/defaults/_default.css"> <!-- load the default style -->
+        <link rel="stylesheet" href="styles/defaults/_nav.css"> <!-- load the nav style -->
+        <link rel="stylesheet" href="styles/main.css"> <!-- load the main style -->
+        <script defer src="script.js"></script> <!-- load the script -->
+
+    </head>
+    <body>
+        <div class="nav">
+            <div id="navitem0"><img src="assests/personal.png"></img></div>
+            <div id="navitem1"><a href="index.html">Home</a></div>
+            <div id="navitem2"><a href="index.html">About</a></div>
+            <div id="navitem3"><a href="index.html">Contact</a></div>
+        </div>
+        <div class="content">
+            <div id="title_div">
+                <h1 id="title">Typing</h1>
+            </div>
+            <div id="text_div">
+                <div id="test_text">
+                    <p id="text"> Press Play to start typing ...</p>
+                </div>
+                <div id="player_ui">
+                    <button id="play_button" onclick="play()">Play</button>
+                    <input type="text" id="text_input" placeholder="Type here ..." disabled="true"></input>
+                    <p id="counter">30</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
