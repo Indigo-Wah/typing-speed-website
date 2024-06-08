@@ -1,14 +1,27 @@
 # Typing Speed Website
 
-I am trying to build a website to learn JS.
-Being somewhat familiar with HTML, CSS and Python I wanted to build a website that would allow me to practice typing.
+This is a very simple website that gets a quote from a list and checks it against the user input. I made it in an effort to learn JS and HTTP. And let's just say it was not easy. But it was a good first step.
 
-## Front End 
+Whereas I do plan on updating this in the future, I'm not sure when I will do that. I would rather expand into other projects!
 
-I plan to go Top-Down, starting with UI and building the backend later.
-The UI should look sleek, clean and modern. This project will ultize [catppuccin](https://catppuccin.com/) for it's theme.
+## How to run
 
-## Back End
+1. Clone the repo
+2. Run `python3 server/server.py`
+3. Run `[broswer] web/index.html`
 
-I want to use Python for the backend. Something that can locally store, anaylsis and process the data. 
-This means that the front end logic will be handled by JS which is not a language I am familiar with. So it will be an interesting experiment.
+The Python server is running on port 8080.
+
+## How to use
+
+**Note the nav bar is non-functional at the moment
+
+Hit the play button to start.
+This will unlock and focus the text input.
+It will also send a GET request to the python server which will return a random quote.
+Once the timer runs out, the server will send a POST request with the user input and the quote.
+The server will then return a response with the accuracy of the user input and set that as the text on the page.
+
+## License
+
+MIT
