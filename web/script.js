@@ -59,7 +59,7 @@ function play() {
       document.getElementById("text_input").value = "";
       document.getElementById("text_input").focus();
 
-      const TIMER = 30;
+      const TIMER = 20;
 
       function setTimeLabel( number ) {
         document.getElementById("counter").innerHTML = TIMER - number;

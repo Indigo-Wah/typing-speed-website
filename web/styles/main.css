@@ -60,6 +60,8 @@
 }
 
 #text_div #player_ui #text_input:focus {
+    width: 80%;
+    word-wrap: break-word;
     outline: none;
 }
 
